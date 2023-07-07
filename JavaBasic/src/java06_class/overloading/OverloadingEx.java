@@ -15,7 +15,7 @@ public class OverloadingEx {
 		System.out.println("----------------");
 		ol.display();
 		
-		System.out.println("----------------");
+		System.out.println("-");
 
 		// x좌표, 111. y좌표 222로 입력하고 출력
 		ol.display(111, 222);
