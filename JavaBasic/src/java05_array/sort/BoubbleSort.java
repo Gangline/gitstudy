@@ -31,7 +31,7 @@ public class BoubbleSort {
 //			}
 //		}
 		//전체 회차 반복
-		for (int j=0; j<arr.length-1; j++) {
+		for (int j=0; j<arr.length-1; j++) {	//j, 0 ~ 4
 			
 			//각 회차 반복
 			for(int i=0; i<arr.length-1-j; i++) {	//i, 0 ~ 3 -j	

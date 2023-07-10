@@ -22,5 +22,5 @@ public class If_01 {
 		System.out.println("if문의 바깥쪽 출력");
 	
 		}
-	}
+	} 
 

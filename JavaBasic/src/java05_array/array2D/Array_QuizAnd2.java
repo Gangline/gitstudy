@@ -2,7 +2,7 @@ package java05_array.array2D;
 
 import java.util.Arrays;
 
-public class Array_QuizAnd {
+public class Array_QuizAnd2 {
 	public static void main(String[] args) {
 		
 		
@@ -52,43 +52,34 @@ public class Array_QuizAnd {
 //		int sum = arr[0] + arr[2] + arr[4] + arr[6] + arr[8];
 //		int sum1 = arr[1] + arr[3] + arr[5] + arr[7] + arr[9];
 //		System.out.println(sum - sum1);
-		
-		System.out.println("---------------------------------");
-		int[] arr = { 10, 17, 3, 9, 27, 10, 8, 9, 13, 21 };
-		int[] invert_arr = { 21, 13, 9, 8, 10, 27, 9, 3, 17, 10 };
-		System.out.println(arr.length);
 		int sum = 0;
 		int sum1 = 0;
 		
-		for(int i=0; i<arr.length; i++) {// 짝수번째 인덱스의 나열
-			if(i%2==0) {
-				sum += arr[i];
-			} else {
-				sum1 += arr[i];
-			}
-		}	System.out.println( sum - sum1);
-		System.out.println("---------------------------------");
-
-		for(int i=0; i<arr.length-1; i++) { // i, 0~9 , x9, 전체회차
-			for(int j=0; j<arr.length-1-i; j++) { // j, x8,
-				if( arr[j]<arr[j+1]) { //ex) arr[0](10) < arr[1](17) = temp =   
-					int temp = arr[j];
-					arr[j] = arr[j+1];
-					arr[j+1] = temp;
-				}
-				System.out.print(arr[j] + " ");
-			}
-		}
+		int[] arr = {10, 17, 3, 9, 27, 10, 8, 9, 13, 21};
+		//for문을 활용한 식
+//		for(int i=0; i<arr.length; i+=2) {
+//			sum += arr[i];	
+//			System.out.println(sum);
+//		}
+//			System.out.println();
+//		for(int j=1; j<arr.length; j+=2) {
+//			sum1 += arr[j];
+//			System.out.println(sum1);
+//		}
+//		System.out.println(sum - sum1);
 		
-		System.out.println();
+		
+		//if문을 활용한 식
 		for(int i=0; i<arr.length; i++) {
-
-			System.out.print(arr[i] + " ");
+			if(i %2==0) {
+				sum += arr[i];
+				System.out.print("sum = " + sum + ", ");
+			}else {
+				sum1 += arr[i];
+				System.out.println("sum1 = " + sum1 + ", ");
+			}
 		}
-		
-		
-		
-		
+		System.out.println(sum - sum1);
 		
 		
 		
