@@ -6,16 +6,14 @@ public class MethodQuizEx {
 		MethodQuiz mq = new MethodQuiz();
 		
 		
-		mq.nump();
+		mq.nump(); //메소드 호출
 		System.out.println("----------");
 
-		mq.nump2(3);
+		mq.nump2(3); //메소드 호출
 		System.out.println("-----------");
 		
-		mq.nump3(4, "Hi");
+		mq.nump3(4, "Hi");	//메소드 호출
 		
 	}
-	
-	
 	
 }
